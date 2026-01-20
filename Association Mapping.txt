@@ -1,0 +1,63 @@
+Association Mapping
+==================
+In enterprise applications the main intentions of Associations  is to improve data navigations between entities and to improve communication between entities. 
+
+in Object oriented Data Model. we are able to achieve associations by declaring one or Collection of reference variables of entity class in another entity class.
+
+In Relational Data Model we are able to achieve associations in following three ways:
+
+1. by defining primary key Foreign key relations between tables.
+2. By providing join column between tables.
+3. by defining join table between two tables.
+
+to resolve the associations mismatch between both data models hibernate has provided
+Hibernate Association mappings
+
+1. One-To-One Association
+2. One-To-many
+3. Many-To-One
+4. Many-To-Many
+================================================
+1. One-To-One Association Mapping
+================================================
+it is a relation between entities where one instance of entities should be mapped with exactly one instance of another entity.
+
+ex: Every Employee Must have exactly one individual Account.
+ex: Every Employee Must have exactly one Address.
+
+
+1. One-To-Many Association Mapping
+================================================
+it is a relation between entities where one instance of entities should be mapped with exactly one instance of another entity.
+
+ex: Every Employee Must have exactly one individual Account.
+ex: Every Employee Must have exactly one Address.
+
+2. One-To-many Association Mapping
+==================================
+it is a relation between entities where one instance of entities should be mapped with multiple instance of another entity.
+
+ex: single department has multiple Employees 
+
+3. Many-To-One Association Mapping
+==================================
+it is a relation between entity classes, where multiple instances of an entity should be mapped with single instance of another entity.
+ex:
+===
+many students have joined with singe branch 
+
+4. Many-To-Many Association
+===========================
+a Many-To-Many association is a relationship between two entity classes. where multiple instances of one entity are associated with multiple instance of another entity
+
+in simple terms
+===============
+One record in table a can be linked with many records in table B.
+and each record in table B can be linked with many records in table A.
+
+example
+=======
+a student can enroll in multiple course
+a course can have multiple students
+
+multiple students are joined multiple courses
